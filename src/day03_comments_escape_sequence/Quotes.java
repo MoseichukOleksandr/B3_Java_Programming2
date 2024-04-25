@@ -1,4 +1,4 @@
-package day3_comments_escape_sequence;
+package day03_comments_escape_sequence;
 
 public class Quotes {
     public static void main(String[] args) {
