@@ -29,6 +29,7 @@ public class FizzBuzz {
         }
 
 
+
 // Option 1
         if (num % 3 == 0 && num % 5 == 0) {
             System.out.println("FizzBuzz");
