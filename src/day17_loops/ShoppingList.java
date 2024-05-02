@@ -32,7 +32,5 @@ public class ShoppingList {
         System.out.println(list);
 
 
-
-
     }
 }
