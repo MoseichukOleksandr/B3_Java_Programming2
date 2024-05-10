@@ -1,5 +1,7 @@
 package day22_arrays;
 
+import java.util.Arrays;
+
 public class SplitExample {
     public static void main(String[] args) {
 
