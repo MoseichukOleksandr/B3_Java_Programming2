@@ -69,8 +69,6 @@ public class ForEachExample {
         }
         System.out.println(Arrays.toString(names));
 
-
-
     }
 
 }
