@@ -104,7 +104,16 @@ public class ArrayUtil {
 
     //TODO: create a reusable method that take 2 int array and return one array combined
 
+    public static int [] addElemInArr (int [] arr1, int [] arr2) { // [0, 1, 1, 2, 3] - [4, 5]
 
+        int [] newArr = Arrays.copyOf(arr1, arr1.length+arr2.length); // [0, 1, 1, 2, 3, _, _]
+
+        for (int i = arr1.length; i < newArr.length; i++) {
+            newArr[i] = arr2[i - arr1.length]; // newArr[5] = arr2[5 - 5]; |  newArr[6] = arr2[6 - 5];
+        }
+
+        return newArr;
+    }
 
 
     /**
