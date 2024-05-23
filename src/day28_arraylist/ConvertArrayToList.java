@@ -22,8 +22,32 @@ public class ConvertArrayToList {
         System.out.println(l2);
 
 
-        ArrayList <String> l3 = new ArrayList<>(Arrays.asList("Java", "Python", "C#", "C++"));
+        ArrayList <String> l3 = new ArrayList<>(Arrays.asList("Java")); // ["Java"]
         System.out.println(l3);
 
+        l3.add("Php");
+
+
+
+        int []  arr2 = {1, 2, 3};
+
+        //ArrayList <Integer> l5 = new ArrayList<>(  Arrays.asList(  arr2   ) );
+        ArrayList <Integer> l5 = new ArrayList<>(  Arrays.asList(  converIntToIntegerArr(arr2)   ) );
+
+
+    }
+
+
+    public static Integer []  converIntToIntegerArr (int [] arr) {
+
+        Integer [] objArr = new Integer[arr.length];
+
+        for (int i = 0; i <arr.length; i++) {
+
+            objArr[i] = arr [i];
+
+        }
+
+        return objArr;
     }
 }
