@@ -31,11 +31,23 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
-                "name='" + name + '\'' +
-                ", brand='" + brand + '\'' +
-                ", memory=" + memory +
-                ", version=" + version +
-                '}';
-    }
-}
+        String obj = name;
+
+        if (brand != null) {
+            obj += " - " + brand;
+        }
+        if (memory != 0) {
+            obj += " - " + memory;
+        }
+        if (version != 0.0) {
+            obj += " - " + version;
+        }
+        return obj;
+
+//        return "Phone{" +
+//                "name='" + name + '\'' +
+//                ", brand='" + brand + '\'' +
+//                ", memory=" + memory +
+//                ", version=" + version +
+//                '}';
+}}
