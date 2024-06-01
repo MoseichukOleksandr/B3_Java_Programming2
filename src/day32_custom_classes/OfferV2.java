@@ -3,18 +3,18 @@ package day32_custom_classes;
 public class OfferV2 {
     String location;
     String company;
-    double salary;
+    public double salary;
     boolean isFullTime;
     int numberOfPTO;
 
 
-    public OfferV2 (String company, String location) {
+    public OfferV2(String company, String location) {
         this.company = company;
         this.location = location;
     }
 
     // OVERLOADED CONSTRUCTOR
-    public OfferV2 (String company, String location, double salary) {
+    public OfferV2(String company, String location, double salary) {
         this(company, location);
         this.salary = salary;
     }
