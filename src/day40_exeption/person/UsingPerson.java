@@ -1,9 +1,9 @@
-package day40_exception.person;
+package day40_exeption.person;
 
 public class UsingPerson {
     public static void main(String[] args) throws Exception {
 
-        day40_exception.person.Person obj = new day40_exception.person.Person();
+        Person obj = new Person();
 
         obj.setName("");
 
@@ -29,6 +29,7 @@ public class UsingPerson {
         System.out.println("Bye");
 
         obj.setName("Mike");
+
 
 
     }
